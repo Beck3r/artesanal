@@ -22,13 +22,13 @@ public class TestRecargarJUnit {
 	@Test
 	public void testRecargaFallida() {
 		Maquina negra = new Maquina("Pilsener", "cerveza", 0.02, 8000, "02");
-		negra.recargarCerveza(7000);
+		negra.recargarCerveza(5000);
 		
 		boolean resultado = negra.recargarCerveza(1000);
 		
 		
 		assertTrue(resultado);
-		assertEquals(3000, negra.getCapacidadActual(),0.0001);
+		assertEquals(6000, negra.getCapacidadActual(),0.0001);
 	}
 	
 	
